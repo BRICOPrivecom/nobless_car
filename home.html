@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Noblesss Car</title>
 </head>
 <body>
@@ -35,51 +36,71 @@
 
 
     <div class="departement" id="voitures">
-        <h2>Nos voitures Modernes</h2>
-        <hr>
+        
         <div class="container">
-            <div class="card">
-                <img src="Images/Bentley.jpg" alt="">
-                <div class="card-title">Bentley</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
-            </div>
 
-            <div class="card">
-                <img src="Images/db11.webp" alt="">
-                <div class="card-title">Aston Martin db11</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
-            </div>
+            
+            <h2>Nos voitures Modernes</h2>
+            <hr>
+            
 
-            <div class="card">
-                <img src="Images/cq5dam.web.1920.webp" alt="">
-                <div class="card-title">Rolls Royes</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+            <div class="cars">
+                <div class="card" onclick="openModal()">
+                    <img src="Images/Bentley.jpg" alt="">
+                    <div class="card-title">Bentley</div>
+                    <div class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.
+                    </div>
+    
+                    
+                </div> 
+    
+                <div class="card">
+                    <img src="Images/db11.webp" alt="">
+                    <div class="card-title">Aston Martin db11</div>
+                    <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                </div>
+    
+                <div class="card">
+                    <img src="Images/cq5dam.web.1920.webp" alt="">
+                    <div class="card-title">Rolls Royce</div>
+                    <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                </div>
             </div>
+            
         </div>
     </div>
 
     <div class="departement">
-        <h2>Nos voitures Classiques</h2>
-        <hr>
-        <div class="container">
-            <div class="card">
-                <img src="Images/Bentley.jpg" alt="">
-                <div class="card-title">Bentley</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
-            </div>
+        
+            <div class="container2">
 
-            <div class="card">
-                <img src="Images/db11.webp" alt="">
-                <div class="card-title">Aston Martin db11</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
-            </div>
+                <h2>Nos voitures Classiques</h2>
+                <hr>
 
-            <div class="card">
-                <img src="Images/cq5dam.web.1920.webp" alt="">
-                <div class="card-title">Rolls Royes</div>
-                <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                <div class="cars">
+                    <div class="card2">
+                        <img src="Images/cadillac.jpg" alt="">
+                        <div class="card-title">Cadillac</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                    </div>
+        
+                    <div class="card2">
+                        <img src="Images/db5.jpg" alt="">
+                        <div class="card-title">Aston Martin db5</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                    </div>
+        
+                    <div class="card2">
+                        <img src="Images/cq5dam.web.1920.webp" alt="">
+                        <div class="card-title">Rolls Royce</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus repellat qui tempore commodi facilis hic, labore, porro, aperiam incidunt nihil itaque. Error porro ea ratione amet ipsam aut veniam.</div>
+                    </div>
+                </div>
+                
             </div>
         </div>
+        
     </div>
 
 
@@ -160,6 +181,29 @@
             </tr>
         </table>
     </section>
+
+    <div class="overlay"></div>
+
+    <div class="modal">
+        <div class="modal-close" onclick="closeModal()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </div>
+
+        <div class="modal-header">
+            <h2 class="modal-header-title"></h2>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquam nisi aut quaerat optio consequuntur aspernatur saepe illum placeat, omnis eligendi dolor quis necessitatibus rerum debitis molestiae deserunt maiores repudiandae.
+            </p>
+        
+        </div>
+        <div class="modal-footer">
+            <button class="modal-footer-button" onclick="closeModal()">FERMER</button>
+        </div>
+    </div>
 
     <footer>
         <ul class="top">

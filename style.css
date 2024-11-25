@@ -186,7 +186,7 @@ section{
     padding: 20px;
 }
 
-.departement hr {
+.container hr {
     width: 7vw;
     border: solid 2px;
     color: black;
@@ -194,18 +194,29 @@ section{
     margin-bottom: 5vw;
 }
 
-.departement h2 {
+.container2 hr {
+    width: 7vw;
+    border: solid 2px;
+    color: #F4E8D1;
+    margin: auto;
+    margin-bottom: 5vw;
+}
+
+.container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    margin-top: 8vw;
+    margin-bottom: 15px;
+}
+
+.container2 h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: xx-large;
     margin-top: 10vw;
     margin-bottom: 15px;
-}
-
-.departement h3 {
-    font-size: x-large;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    color: #F4E8D1;
 }
 
 /* CARD */
@@ -213,16 +224,43 @@ section{
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 100px;
+    padding-bottom: 10vw;
+    background-color: #F4E8D1;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
     margin-bottom: 15vw;
-    padding-top: 10vw;
     padding-bottom: 10vw;
     background-color: #444444;
 }
 
+.cars {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .card {
+    width: 30%;
+    background-color: #7e7e7e;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+    height: 32em;
+    border-radius: 8px;
+}
+
+.card2 {
     width: 30%;
     background-color: #F4E8D1;
     overflow: hidden;
@@ -240,8 +278,15 @@ section{
     object-fit: cover;
 }
 
+.card2 img {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 .card-title {
-    font-size: .8em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 15px;
     padding: 8px;
@@ -249,7 +294,7 @@ section{
 
 .card-description {
     padding: 20px;
-    font-size: .5em;
+    font-size: .9em;
     line-height: 1.5;
 }
 
@@ -261,10 +306,97 @@ section{
     color: white;
 }
 
+.card2:hover {
+    background-color: #797979;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+    color: white;
+}
+
 .card:not(:hover) {
     transition: .3s;
 }
 
+.card2:not(:hover) {
+    transition: .3s;
+}
+
+/* MODAL */
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 70vh;
+    background-color: #F4E8D1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+}
+
+.modal--open {
+    display: block;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition: .15s all ease-in-out;
+}
+
+.modal-close svg {
+    height: 25px;
+    width: 25px;
+}
+
+.modal-close:hover {
+    color: red;
+    transform: scale(0.93);
+}
+
+.modal-header {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 300px 0px;
+    background-image: url(Images/Bentley.jpg);
+    background-size: cover;
+}
+
+.modal-body {
+    font-size: 1.1em;
+}
+
+.modal-footer-button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #444444;
+    color: white;
+    cursor: pointer;
+    transition: .3 all ease-in-out;
+}
+
+.modal-footer-button:hover {
+    background-color: #303030;
+}
 
 
 /* =========================== PROPOS ============================ */
